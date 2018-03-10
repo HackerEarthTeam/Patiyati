@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.spring.app.entity.User;
 import com.spring.app.repository.UserRepository;
+import com.spring.app.utils.EmailController;
 
 @Service
 public class UserService {
@@ -16,7 +17,9 @@ public class UserService {
 
 	@Autowired
 	UserRepository userRepository;
-
+	@Autowired
+	EmailController emailController;
+	
 	public List<User> findAllUsers() {
 		return userRepository.findAll();
 	}
@@ -26,7 +29,21 @@ public class UserService {
 	}
 	
 	public User saveUser(User user){
-		return userRepository.save(user);
+
+		String flag = "updated";
+		if (user.getId() == null) {
+			flag = "created";
+		}
+
+		String userName = user.getFirstName();
+		String emailId  = user.getEmailId();
+
+		String message = "Hi" + userName + ", \n your Account has been" + flag + "sucessfully.";
+		emailController.sendEmail(emailId, message);
+
+		user = userRepository.save(user);
+		
+		return user;
 	}
 	
 	public List<User> saveUserList(List<User> users){
