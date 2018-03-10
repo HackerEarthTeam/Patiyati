@@ -22,6 +22,6 @@
 hs_err_pid*
 
 # ignore files in target folder
-*/target/**
+/target/**
 
 
