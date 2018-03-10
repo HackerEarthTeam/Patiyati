@@ -44,7 +44,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				  
-				<a class="logo" href="index.html"><img src="logo.svg" alt="" /></a>
+				<a class="logo" href="index"><img src="logo.svg" alt="" /></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#actionicons" aria-controls="actionicons" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="ti-more"></span>
 				</button>
@@ -53,16 +53,16 @@
 				<!--  -->
 				<ul class="navbar-nav  mt-lg-0 first_level">
 					<li class="nav-item">
-						<a class="nav-link" href="my-article.html">Crafts</a>
+						<a class="nav-link" href="my-article">Crafts</a>
 					</li> 
 					<li class="nav-item">
-						<a class="nav-link" href="my-article.html">Entertaining</a>
+						<a class="nav-link" href="my-article">Entertaining</a>
 					</li> 
 					<li class="nav-item">
-						<a class="nav-link" href="my-article.html">Holidays</a>
+						<a class="nav-link" href="my-article">Holidays</a>
 					</li> 
 					<li class="nav-item">
-						<a class="nav-link" href="category.html">More</a>
+						<a class="nav-link" href="category">More</a>
 					</li> 
 				</ul>
 				
@@ -80,10 +80,10 @@
 							<a class="nav-link" href="#"><span class="ti-heart"></span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="login.html"><span class="ti-user"></span></a>
+							<a class="nav-link" href="login"><span class="ti-user"></span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="index.html"><span class="ti-lock"></span> </a>
+							<a class="nav-link" href="index"><span class="ti-lock"></span> </a>
 						</li> 					
 					</ul>
 			  </div>
@@ -114,7 +114,7 @@
 					<ul class="list-inline">
 						<li>
 							<div class="icon-box">
-								<a href="my-article.html">
+								<a href="my-article">
 									<i class="icofont icofont-animal-dog text-white"></i>
 									<span class=" text-white">pets</span>
 								</a> 
@@ -122,7 +122,7 @@
 						</li>
 						<li>
 							<div class="icon-box">
-								<a href="my-article.html">
+								<a href="my-article">
 									<i class="icofont icofont-fast-food text-white"></i>
 									<span class=" text-white">food</span>
 								</a> 
@@ -130,7 +130,7 @@
 						</li>
 						<li>
 							<div class="icon-box">
-								<a href="my-article.html">
+								<a href="my-article">
 									<i class="icofont icofont-snow-flake text-white"></i>
 									<span class=" text-white">craft</span>
 								</a> 
@@ -138,7 +138,7 @@
 						</li>
 						<li>
 							<div class="icon-box">
-								<a href="my-article.html">
+								<a href="my-article">
 									<i class="icofont icofont-fast-food text-white"></i>
 									<span class=" text-white">food</span>
 								</a> 
@@ -146,7 +146,7 @@
 						</li>
 						<li>
 							<div class="icon-box ">
-								<a href="my-article.html">
+								<a href="my-article">
 									<i class="icofont icofont-animal-dog text-white"></i>
 									<span class=" text-white">pets</span>
 								</a> 
@@ -168,7 +168,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="uiBox" style="background-image: url(images/food.png);">
-						<a href="my-article.html" class="abLink"></a>
+						<a href="my-article" class="abLink"></a>
 						<div class="ab-content text-center text-white">
 							<h3 class="text-white">Food & Drinks</h3>
 							<p>Quisque sem tortor, ultrices vitae libero nec</p>
@@ -177,7 +177,7 @@
 				</div>
 				<div class="col-md-6">
 					<div class="uiBox uiBox1" style="background-image: url(images/decor.png);">
-						<a href="my-article.html" class="abLink"></a>
+						<a href="my-article" class="abLink"></a>
 						<div class="ab-content text-center text-white">
 							<h3 class="text-white">Food & Drinks</h3>
 							<p>Quisque sem tortor, ultrices vitae libero nec</p>
@@ -187,7 +187,7 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="uiBox uiBox1" style="background-image: url(images/food.png);">
-								<a href="my-article.html" class="abLink"></a>
+								<a href="my-article" class="abLink"></a>
 								<div class="ab-content text-center text-white">
 									<h3 class="text-white">Food & Drinks</h3>
 									<p>Quisque sem tortor, ultrices vitae libero nec</p>
@@ -196,7 +196,7 @@
 						</div>
 						<div class="col-md-6">
 							<div class="uiBox uiBox1" style="background-image: url(images/food.png);">
-								<a href="my-article.html" class="abLink"></a>
+								<a href="my-article" class="abLink"></a>
 								<div class="ab-content text-center text-white">
 									<h3 class="text-white">Food & Drinks</h3>
 									<p>Quisque sem tortor, ultrices vitae libero nec</p>
@@ -228,7 +228,7 @@
 						<div class="lp-grid-desc">
 							<div class="lp-grid-box-description ">
 								<h4 class="lp-h4">
-									<a href="single.html">The Mark Hotel</a>
+									<a href="single">The Mark Hotel</a>
 								</h4> 
 								<ul class="list-inline list-block">
 									<li>
@@ -238,7 +238,7 @@
 									<li>
 										<span class="cat-icon">
 											<i class="icofont icofont-fast-food  text-black"></i></span>
-											<a href="my-article.html" class="labelView">
+											<a href="my-article" class="labelView">
 												Restaurant 
 											</a>			
 									</li>
@@ -256,7 +256,7 @@
 								</div>
 							</div>
 							<div class="lp-grid-box-bottom text-right">
-								<a href="single.html" class="">Read More</a>			  						 
+								<a href="single" class="">Read More</a>			  						 
 							</div>
 						</div>
 						
@@ -269,7 +269,7 @@
 						<div class="lp-grid-desc">
 							<div class="lp-grid-box-description ">
 								<h4 class="lp-h4">
-									<a href="single.html">The Mark Hotel</a>
+									<a href="single">The Mark Hotel</a>
 								</h4> 
 								<ul class="list-inline list-block">
 									<li>
@@ -279,7 +279,7 @@
 									<li>
 										<span class="cat-icon">
 											<i class="icofont icofont-fast-food  text-black"></i></span>
-											<a href="my-article.html" class="labelView">
+											<a href="my-article" class="labelView">
 												Restaurant 
 											</a>			
 									</li>
@@ -297,7 +297,7 @@
 								</div>
 							</div>
 							<div class="lp-grid-box-bottom text-right">
-								<a href="single.html" class="">Read More</a>			  						 
+								<a href="single" class="">Read More</a>			  						 
 							</div>
 						</div>
 						
@@ -310,7 +310,7 @@
 						<div class="lp-grid-desc">
 							<div class="lp-grid-box-description ">
 								<h4 class="lp-h4">
-									<a href="single.html">The Mark Hotel</a>
+									<a href="single">The Mark Hotel</a>
 								</h4> 
 								<ul class="list-inline list-block">
 									<li>
@@ -320,7 +320,7 @@
 									<li>
 										<span class="cat-icon">
 											<i class="icofont icofont-fast-food  text-black"></i></span>
-											<a href="my-article.html" class="labelView">
+											<a href="my-article" class="labelView">
 												Restaurant 
 											</a>			
 									</li>
@@ -338,7 +338,7 @@
 								</div>
 							</div>
 							<div class="lp-grid-box-bottom text-right">
-								<a href="single.html" class="">Read More</a>			  						 
+								<a href="single" class="">Read More</a>			  						 
 							</div>
 						</div>
 						
@@ -352,7 +352,7 @@
 						<div class="lp-grid-desc">
 							<div class="lp-grid-box-description ">
 								<h4 class="lp-h4">
-									<a href="single.html">The Mark Hotel</a>
+									<a href="single">The Mark Hotel</a>
 								</h4> 
 								<ul class="list-inline list-block">
 									<li>
@@ -362,7 +362,7 @@
 									<li>
 										<span class="cat-icon">
 											<i class="icofont icofont-fast-food  text-black"></i></span>
-											<a href="my-article.html" class="labelView">
+											<a href="my-article" class="labelView">
 												Restaurant 
 											</a>			
 									</li>
@@ -380,7 +380,7 @@
 								</div>
 							</div>
 							<div class="lp-grid-box-bottom text-right">
-								<a href="single.html" class="">Read More</a>			  						 
+								<a href="single" class="">Read More</a>			  						 
 							</div>
 						</div>
 						
@@ -393,7 +393,7 @@
 						<div class="lp-grid-desc">
 							<div class="lp-grid-box-description ">
 								<h4 class="lp-h4">
-									<a href="single.html">The Mark Hotel</a>
+									<a href="single">The Mark Hotel</a>
 								</h4> 
 								<ul class="list-inline list-block">
 									<li>
@@ -403,7 +403,7 @@
 									<li>
 										<span class="cat-icon">
 											<i class="icofont icofont-fast-food  text-black"></i></span>
-											<a href="my-article.html" class="labelView">
+											<a href="my-article" class="labelView">
 												Restaurant 
 											</a>			
 									</li>
@@ -421,7 +421,7 @@
 								</div>
 							</div>
 							<div class="lp-grid-box-bottom text-right">
-								<a href="single.html" class="">Read More</a>			  						 
+								<a href="single" class="">Read More</a>			  						 
 							</div>
 						</div>
 						
@@ -434,7 +434,7 @@
 						<div class="lp-grid-desc">
 							<div class="lp-grid-box-description ">
 								<h4 class="lp-h4">
-									<a href="single.html">The Mark Hotel</a>
+									<a href="single">The Mark Hotel</a>
 								</h4> 
 								<ul class="list-inline list-block">
 									<li>
@@ -444,7 +444,7 @@
 									<li>
 										<span class="cat-icon">
 											<i class="icofont icofont-fast-food  text-black"></i></span>
-											<a href="my-article.html" class="labelView">
+											<a href="my-article" class="labelView">
 												Restaurant 
 											</a>			
 									</li>
@@ -462,7 +462,7 @@
 								</div>
 							</div>
 							<div class="lp-grid-box-bottom text-right">
-								<a href="single.html" class="">Read More</a>			  						 
+								<a href="single" class="">Read More</a>			  						 
 							</div>
 						</div>
 						

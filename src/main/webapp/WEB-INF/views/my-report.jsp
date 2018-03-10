@@ -43,7 +43,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				  
-				<a class="logo" href="index.html"><img src="logo.svg" alt="" /></a>
+				<a class="logo" href="index"><img src="logo.svg" alt="" /></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#actionicons" aria-controls="actionicons" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="ti-more"></span>
 				</button>
@@ -52,16 +52,16 @@
 				<!--  -->
 				<ul class="navbar-nav  mt-lg-0 first_level">
 					<li class="nav-item">
-						<a class="nav-link" href="my-article.html">Crafts</a>
+						<a class="nav-link" href="my-article">Crafts</a>
 					</li> 
 					<li class="nav-item">
-						<a class="nav-link" href="my-article.html">Entertaining</a>
+						<a class="nav-link" href="my-article">Entertaining</a>
 					</li> 
 					<li class="nav-item">
-						<a class="nav-link" href="my-article.html">Holidays</a>
+						<a class="nav-link" href="my-article">Holidays</a>
 					</li> 
 					<li class="nav-item">
-						<a class="nav-link" href="category.html">More</a>
+						<a class="nav-link" href="category">More</a>
 					</li> 
 				</ul>
 				
@@ -79,10 +79,10 @@
 							<a class="nav-link" href="#"><span class="ti-heart"></span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="login.html"><span class="ti-user"></span></a>
+							<a class="nav-link" href="login"><span class="ti-user"></span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="index.html"><span class="ti-lock"></span> </a>
+							<a class="nav-link" href="index"><span class="ti-lock"></span> </a>
 						</li> 					
 					</ul>
 			  </div>
@@ -121,19 +121,19 @@
 							
 							<ul class="my-account-nav">
 								<li class="sub-nav-title">Manage Account</li>
-								<li><a href="my-account.html" class=""><i class="ti-user"></i> My Profile</a></li>
-								<li><a href="my-earnings.html" class=""><i class="ti-money"></i> Earnings</a></li> 
-								<li><a href="my-report.html" class="current"><i class="ti-pie-chart"></i> Report</a></li>
+								<li><a href="my-account" class=""><i class="ti-user"></i> My Profile</a></li>
+								<li><a href="my-earnings" class=""><i class="ti-money"></i> Earnings</a></li> 
+								<li><a href="my-report" class="current"><i class="ti-pie-chart"></i> Report</a></li>
 							</ul>
 							
 							<ul class="my-account-nav">
 								<li class="sub-nav-title">Manage Listings</li>
-								<li><a href="my-article.html"><i class="ti-layout-list-thumb-alt"></i> My Article</a></li>
-								<li><a href="new-article.html"><i class="ti-pencil-alt2"></i> New Article</a></li>
+								<li><a href="my-article"><i class="ti-layout-list-thumb-alt"></i> My Article</a></li>
+								<li><a href="new-article"><i class="ti-pencil-alt2"></i> New Article</a></li>
 							</ul>
 
 							<ul class="my-account-nav">
-								<li><a href="change-password.html"><i class="ti-lock"></i> Change Password</a></li>
+								<li><a href="change-password"><i class="ti-lock"></i> Change Password</a></li>
 								<li><a href="#"><i class="icofont icofont-logout"></i> Log Out</a></li>
 							</ul>
 

@@ -1,25 +1,22 @@
 package com.spring.app.rest.controller;
 
 import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-//import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.spring.app.entity.User;
 import com.spring.app.service.UserService;
 
 
 @RestController
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/rest/user")
+public class UserRestController {
 
-	static Logger LOG = LoggerFactory.getLogger(UserController.class.getName());
+	static Logger LOG = LoggerFactory.getLogger(UserRestController.class.getName());
 	
 	@Autowired
 	UserService userService;
@@ -27,7 +24,19 @@ public class UserController {
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public List<User> userList() {
 		List<User> user = userService.findAllUsers();
-		LOG.info("user "+user);
 		return user;
 	}
+	
+	@RequestMapping(value = "/findById", method = RequestMethod.GET)
+	public User findById(@RequestParam(value = "id", required = true) String id) {
+		return userService.findById(id);
+	}
+	
+	@RequestMapping(value = "/findByEmailId", method = RequestMethod.GET)
+	public User findByEmailId(@RequestParam(value = "emailId", required = true) String emailId) {
+		emailId = emailId.trim().toLowerCase();
+		return userService.findByEmailId(emailId);
+	}
+	
+		
 }

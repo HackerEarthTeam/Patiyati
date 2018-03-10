@@ -43,7 +43,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				  
-				<a class="logo" href="index.html"><img src="logo.svg" alt="" /></a>
+				<a class="logo" href="index"><img src="logo.svg" alt="" /></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#actionicons" aria-controls="actionicons" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="ti-more"></span>
 				</button>
@@ -52,16 +52,16 @@
 				<!--  -->
 				<ul class="navbar-nav  mt-lg-0 first_level">
 					<li class="nav-item">
-						<a class="nav-link" href="my-article.html">Crafts</a>
+						<a class="nav-link" href="my-article">Crafts</a>
 					</li> 
 					<li class="nav-item">
-						<a class="nav-link" href="my-article.html">Entertaining</a>
+						<a class="nav-link" href="my-article">Entertaining</a>
 					</li> 
 					<li class="nav-item">
-						<a class="nav-link" href="my-article.html">Holidays</a>
+						<a class="nav-link" href="my-article">Holidays</a>
 					</li> 
 					<li class="nav-item">
-						<a class="nav-link" href="category.html">More</a>
+						<a class="nav-link" href="category">More</a>
 					</li> 
 				</ul>
 				
@@ -79,10 +79,10 @@
 							<a class="nav-link" href="#"><span class="ti-heart"></span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="login.html"><span class="ti-user"></span></a>
+							<a class="nav-link" href="login"><span class="ti-user"></span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="index.html"><span class="ti-lock"></span> </a>
+							<a class="nav-link" href="index"><span class="ti-lock"></span> </a>
 						</li> 					
 					</ul>
 			  </div>
@@ -123,7 +123,7 @@
 
 							<!-- Login -->
 							<div class="tab-pane fade show active" id="tab1" role="tabpanel">
-								<form method="post" class="login" action="my-account.html">
+								<form method="post" class="login" action="login">
 
 									<p class="form-row form-row-wide">
 										<label for="username">Username:
@@ -143,16 +143,13 @@
 										<input type="submit" class="btn btn-primary" name="login" value="Login"> 
 										 
 									</p>
-
-								 
-									
 								</form>
 							</div>
 
 							<!-- Register -->
 							<div class="tab-pane fade" id="tab2" role="tabpanel">
 
-								<form method="post" class="register">
+								<form method="post" class="register" action="registration">
 									
 								<p class="form-row form-row-wide">
 									<label for="username2">Username:

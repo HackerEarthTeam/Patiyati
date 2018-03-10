@@ -32,4 +32,16 @@ public class UserService {
 	public List<User> saveUserList(List<User> users){
 		return userRepository.save(users);
 	}
+
+	public User findByEmailId(String email) {
+		return userRepository.findByEmailId(email);
+	}
+
+	public User findByEmailIdAndPassword(String emailId, String password) {
+		return userRepository.findByEmailIdAndPassword(emailId,password);
+	}
+
+	public User findById(String id) {
+		return userRepository.findById(id);
+	}
 }
