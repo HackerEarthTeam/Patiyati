@@ -116,6 +116,7 @@
 					<p>If you don't have an account you can create one by entering your email address in contact details section. A password will be automatically emailed to you.</p>
 				</div>
 				
+				<form>
 				<h3>Basic Information</h3>
 				 
 				 
@@ -184,7 +185,7 @@
 				
 				<button class="btn btn-outline-primary" type="submit">Submit Article</button> 
 				
-				
+				</form>
 			</div>
 		</div>
 	</div> 
