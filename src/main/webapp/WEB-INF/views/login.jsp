@@ -169,12 +169,12 @@
 											</p>
 										</div>
 									</div>		
-									<p class="form-row form-row-wide">
+								<!-- 	<p class="form-row form-row-wide">
 										<label for="username2">Username:
 											<i class="ti-user"></i>
 											<input type="text" class="input-text" name="username" id="username2" value="">
 										</label>
-									</p>
+									</p> -->
 										
 									<p class="form-row form-row-wide">
 										<label for="email2">Email Address:

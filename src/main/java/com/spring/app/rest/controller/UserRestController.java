@@ -38,6 +38,16 @@ public class UserRestController {
 		return userService.findByEmailId(emailId);
 	}
 	
+	@RequestMapping(value = "/delete", method = RequestMethod.GET)
+	public void delete(@RequestParam(value = "id", required = true) String id) {
+		 userService.delete(id);
+	}
+	
+	@RequestMapping(value = "/deleteAll", method = RequestMethod.GET)
+	public void delete() {
+		 userService.delete();
+	}
+	
 	@RequestMapping(value = "/emailIdExisting", method = RequestMethod.GET)
 	public String emailExisting(@RequestParam(value = "emailId", required = true) String emailId) {
 		String result = "new";
