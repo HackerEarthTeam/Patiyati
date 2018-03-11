@@ -15,6 +15,7 @@
 	<link href="css/icofont.css" rel="stylesheet"> 
 	<link href="plugins/chosen/chosen.min.css" rel="stylesheet">
 	<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/bootstrap-tagsinput.css" rel="stylesheet">
 	
     <!-- animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
@@ -116,223 +117,77 @@
 					<p>If you don't have an account you can create one by entering your email address in contact details section. A password will be automatically emailed to you.</p>
 				</div>
 				
-				<form>
-				<h3>Basic Information</h3>
-				 
-				 
-				<div class="submit-section">
+				 <form id="newArticle" data-toggle="validator" role="form" class="bv-form" novalidate method="post" action="/">
+					<div class="submit-section">
 
-					<!-- Title -->
-					<div class="form">
-						<h5>Property Title <i class="tip" data-tip-content="Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)"><div class="tip-content">Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)</div></i></h5>
-						<input class="search-field" type="text" value="">
-					</div> 
-					<!-- Title -->
-					<div class="form">
-						<h5>Tags <i class="tip" data-tip-content="Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)"><div class="tip-content">Add multiple tags by adding comma(,)</div></i></h5>
-						<input class="search-field" type="text" value="" data-role="tagsinput">
-					</div> 
-					
-					<div class="form">
-						<h5>Category<i class="tip" data-tip-content="Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)"><div class="tip-content">Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)</div></i></h5>
-						<div class="checkboxes in-row margin-bottom-20">
-					
-							<input id="check-2" type="checkbox" name="check">
-							<label for="check-2">Air Conditioning</label>
+						<!-- Title -->
+						<div class="form form-group">
+							<h5>Property Title <i class="tip" data-tip-content="Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)"><div class="tip-content">Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)</div></i></h5>
+							<input class="search-field" type="text" value="" name="title" required >
+						</div> 
+						<!-- Title -->
+						<div class="form form-group">
+							<h5>Tags <i class="tip" data-tip-content="Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)"><div class="tip-content">Add multiple tags by pressing shift + enter</div></i></h5>
+							<input class="search-field" type="text" value="" data-role="tagsinput" name="tags">
+						</div> 
+						
+						<div class="form form-group">
+							<h5>Category<i class="tip" data-tip-content="Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)"><div class="tip-content">Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)</div></i></h5>
+							<div class="checkboxes in-row margin-bottom-20">
+						
+								<input id="check-2" type="checkbox" name="category[]">
+								<label for="check-2" >Air Conditioning</label>
 
-							<input id="check-3" type="checkbox" name="check">
-							<label for="check-3">Swimming Pool</label>
+								<input id="check-3" type="checkbox" name="category[]">
+								<label for="check-3">Swimming Pool</label>
 
-							<input id="check-4" type="checkbox" name="check">
-							<label for="check-4">Central Heating</label>
+								<input id="check-4" type="checkbox" name="category[]">
+								<label for="check-4">Central Heating</label>
 
-							<input id="check-5" type="checkbox" name="check">
-							<label for="check-5">Laundry Room</label>	
+								<input id="check-5" type="checkbox" name="category[]">
+								<label for="check-5">Laundry Room</label>	
 
 
-							<input id="check-6" type="checkbox" name="check">
-							<label for="check-6">Gym</label>
+								<input id="check-6" type="checkbox" name="category[]">
+								<label for="check-6">Gym</label>
 
-							<input id="check-7" type="checkbox" name="check">
-							<label for="check-7">Alarm</label>
+								<input id="check-7" type="checkbox" name="category[]">
+								<label for="check-7">Alarm</label>
 
-							<input id="check-8" type="checkbox" name="check">
-							<label for="check-8">Window Covering</label>
-					
+								<input id="check-8" type="checkbox" name="category[]">
+								<label for="check-8">Window Covering</label>
+						
+							</div>
 						</div>
 					</div>
-				</div>
-				
-				<h3>Gallery</h3>
-				<div class="submit-section">
-					<div id="dZUpload" class="dropzone">
-						<div class="dz-default dz-message"><span><i class="ti-plus"></i> Click here or drop files to upload</span></div>
-					</div> 
-				</div>
-				
-				<h3>Video</h3>
-				<div class="submit-section">
-					<div id="dZUpload1" class="dropzone">
-						<div class="dz-default dz-message"><span><i class="ti-plus"></i> Click here or drop files to upload</span></div>
-					</div> 
-				</div>
-				
-				<h3>Detailed Information</h3>
-				<div class="submit-section"> 
-					 <textarea id="editor-container"></textarea>
-				</div>
-				 
-				
-				<button class="btn btn-outline-primary" type="submit">Submit Article</button> 
-				
+					
+					<h3>Gallery</h3>
+					<div class="submit-section">
+						<div id="dZUpload" class="dropzone">
+							<div class="dz-default dz-message"><span><i class="ti-plus"></i> Click here or drop files to upload</span></div>
+						</div> 
+					</div>
+					
+					<h3>Video</h3>
+					<div class="submit-section">
+						<div id="dZUpload1" class="dropzone">
+							<div class="dz-default dz-message"><span><i class="ti-plus"></i> Click here or drop files to upload</span></div>
+						</div> 
+					</div>
+					
+					<h3>Detailed Information</h3>
+					<div class="submit-section form-group"> 
+						<textarea id="editor-container" name="content" required></textarea>
+					</div>
+					
+					<div class="form-group">
+						<button class="btn btn-outline-primary" type="submit" >Submit Article</button> 
+					</div>
 				</form>
 			</div>
 		</div>
 	</div> 
-	<div class="section3" style="background-image: url(images/section3.png);">
-		<div class="container text-center text-white">
-			<h4 class="text-white RockSalt">Daily News & Tips</h4>
-			<h3 class="text-white RockSalt">Top Picks</h3>
-			<img src="images/arrow.png" />
-		</div>
-	</div>
-	
-	<div class="section4">
-		<div class="container">
-			<div class="row">
-				   
-
-				<div class="col-md-4">
-					<div class="lp-grid">
-						<div class="lp-grid-image" style="background-image: url(images/blog1.jpg);"></div>
-						<div class="lp-grid-desc">
-							<div class="lp-grid-box-description ">
-								<h4 class="lp-h4">
-									<a href="#">The Mark Hotel</a>
-								</h4> 
-								<ul class="list-inline list-block">
-									<li>
-										<span class="rate">300</span><label class="labelView">views</label>
-									</li>
-																					 
-									<li>
-										<span class="cat-icon">
-											<i class="icofont icofont-fast-food  text-black"></i></span>
-											<a href="#" class="labelView">
-												Restaurant 
-											</a>			
-									</li>
-								</ul>
-								<div class="review">
-									<div class="review-post">
-										<div class="reviewer-thumb">
-											<img src="images/user.png" alt="">
-										</div>
-										<div class="reviewer-details">
-											<!-- <h4>I loved there foods. - <span>Tuesday April 11, 2017</span></h4> -->
-											<p>The amount of seating here is quite minimal, so we were lucky to snag a table for 4. My girlfri...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="lp-grid-box-bottom text-right">
-								<a href="#" class="">Read More</a>			  						 
-							</div>
-						</div>
-						
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="lp-grid">
-						<div class="lp-grid-image" style="background-image: url(images/blog1.jpg);"></div>
-						<div class="lp-grid-desc">
-							<div class="lp-grid-box-description ">
-								<h4 class="lp-h4">
-									<a href="#">The Mark Hotel</a>
-								</h4> 
-								<ul class="list-inline list-block">
-									<li>
-										<span class="rate">300</span><label class="labelView">views</label>
-									</li>
-																					 
-									<li>
-										<span class="cat-icon">
-											<i class="icofont icofont-fast-food  text-black"></i></span>
-											<a href="#" class="labelView">
-												Restaurant 
-											</a>			
-									</li>
-								</ul>
-								<div class="review">
-									<div class="review-post">
-										<div class="reviewer-thumb">
-											<img src="images/user.png" alt="">
-										</div>
-										<div class="reviewer-details">
-											<!-- <h4>I loved there foods. - <span>Tuesday April 11, 2017</span></h4> -->
-											<p>The amount of seating here is quite minimal, so we were lucky to snag a table for 4. My girlfri...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="lp-grid-box-bottom text-right">
-								<a href="#" class="">Read More</a>			  						 
-							</div>
-						</div>
-						
-					</div>
-				</div>
-				
-				<div class="col-md-4">
-					<div class="lp-grid">
-						<div class="lp-grid-image" style="background-image: url(images/blog1.jpg);"></div>
-						<div class="lp-grid-desc">
-							<div class="lp-grid-box-description ">
-								<h4 class="lp-h4">
-									<a href="#">The Mark Hotel</a>
-								</h4> 
-								<ul class="list-inline list-block">
-									<li>
-										<span class="rate">300</span><label class="labelView">views</label>
-									</li>
-																					 
-									<li>
-										<span class="cat-icon">
-											<i class="icofont icofont-fast-food  text-black"></i></span>
-											<a href="#" class="labelView">
-												Restaurant 
-											</a>			
-									</li>
-								</ul>
-								<div class="review">
-									<div class="review-post">
-										<div class="reviewer-thumb">
-											<img src="images/user.png" alt="">
-										</div>
-										<div class="reviewer-details">
-											<!-- <h4>I loved there foods. - <span>Tuesday April 11, 2017</span></h4> -->
-											<p>The amount of seating here is quite minimal, so we were lucky to snag a table for 4. My girlfri...</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="lp-grid-box-bottom text-right">
-								<a href="#" class="">Read More</a>			  						 
-							</div>
-						</div>
-						
-					</div>
-				</div> 
- 
-
-			</div>
-			<div class="loadMore text-center ">
-				<a href="#" class="RockSalt ">load more</a>
-			</div> 
-		</div>
-	</div>
-	
+	  
 	
 	<div class="footer">
 		<div class="footerTop">
@@ -417,7 +272,105 @@
 	<script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
 	<script src="plugins/chosen/chosen.jquery.min.js"></script> 
 	<script src="plugins/summernote/dist/summernote.min.js"></script>
+	<script src="plugins/bootstrap-validator/dist/validator.min.js"></script>
 	<script src="js/dropzone.js"></script>
 	<script src="js/app.js"></script>
+	<script>
+		(function($){ 
+			
+			$(document).ready(function () {
+				Dropzone.autoDiscover = false;
+					$("#dZUpload").dropzone({
+						url: "upload",
+						addRemoveLinks: true,
+						success: function (file, response) {
+							console.log(file);
+							var imgName = response;
+							file.previewElement.classList.add("dz-success");
+							//console.log("Successfully uploaded :" + imgName);
+						},
+						error: function (file, response) {
+							file.previewElement.classList.add("dz-error");
+						}
+					});
+					
+					Dropzone.autoDiscover = false;
+					$("#dZUpload1").dropzone({
+						url: "upload",
+						addRemoveLinks: true,
+						success: function (file, response) {
+							console.log(file);
+							var imgName = response;
+							file.previewElement.classList.add("dz-success");
+							//console.log("Successfully uploaded :" + imgName);
+						},
+						error: function (file, response) {
+							file.previewElement.classList.add("dz-error");
+						}
+					});
+				
+				
+			});
+			
+			$('#newArticle').submit(function(e){
+				e.preventDefault();
+			});
+			 
+			$('#newArticle').validate({
+				rules: {
+					title: {
+						minlength: 10,
+						required: true
+					},
+					tags: {
+						required: true 
+					},
+					message: {
+						minlength: 2,
+						required: true
+					}
+				},
+				highlight: function (element) {
+					$(element).closest('.control-group').removeClass('success').addClass('error');
+				},
+				submitHandler: function(form) { 
+					 
+
+					// Get the form instance
+					var $form = $(form);
+					// console.log($form.serialize());
+					// Use Ajax to submit form data
+					var formData = new FormData(form);
+					// Display the values
+					for (var value of formData.values()) {
+					   console.log(value); 
+					}
+					 
+					$.ajax({
+						url: "ajax_php_file", // Url to which the request is send
+						type: "POST",             // Type of request to be send, called as method
+						data: new FormData($form), // Data sent to server, a set of key/value pairs (i.e. form fields and values)
+						contentType: false,       // The content type used when sending data to the server.
+						cache: false,             // To unable request pages to be cached
+						processData:false,        // To send DOMDocument or non processed data file it is set to false
+						success: function(data)   // A function to be called if request succeeds
+						{
+							$('#loading').hide();
+							$("#message").html(data);
+						}
+					});
+
+					/* $.post($form.attr('action'), $form.serialize(), function(result) {
+						 
+					}, 'json'); */
+			    },
+				 success: function (element) {
+					element.text('OK!').addClass('valid')
+						.closest('.control-group').removeClass('error').addClass('success');
+				}
+			});
+			 
+		})(jQuery);
+	</script>
 </body> 
 </html>

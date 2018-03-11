@@ -3037,10 +3037,12 @@ box-sizing: border-box; }
 	vertical-align: middle;
 	margin: 0;
 }
-.error{
+input.error{
 	border: 1px solid #f00 !important;
 }
-
+label.error{
+	color: #f00;
+}
 .case-border:hover
 {
 	box-shadow: 0px 0px 22px 5px #dcdcdc;
@@ -3122,4 +3124,12 @@ box-sizing: border-box; }
 	border: 1px solid #e0e0e0;
 	padding: 0 20px;
     width: 100%;
+}
+.btn[disabled], .btn.disabled{
+	color: #f00;
+	border-color: #f00;
+}
+.bv-form .help-block{margin-bottom:0; color: #f00}.bv-form .tooltip-inner{text-align:left}.nav-tabs li.bv-tab-success>a{color:#3c763d}.nav-tabs li.bv-tab-error>a{color:#a94442}
+.has-error input{
+	border-color: #f00;
 }
