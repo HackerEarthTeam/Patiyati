@@ -150,20 +150,28 @@
 						<div class="col-md-8 my-profile">
 							<h4 class="margin-top-0 margin-bottom-30">My Account</h4>
 							<hr />
-							<label>Your Name</label>
-							<input value="Debo" type="text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper, nisi ut aliquam faucibus, odio diam fringilla velit, in volutpat justo lacus eget nisl.</p>
+							<br />
+							<div class="row">
+								<div class="col-md-6">
+									<label>First Name</label>
+									<input value="Debo" type="text">
+								</div>
+								<div class="col-md-6">
+									<label>Last Name</label>
+									<input value="Debo" type="text">
+								</div>
+							</div>
+							
 
-							<label>Your Title</label>
+							<label>Designation</label>
 							<input value="Agent In New York" type="text">
 
 							<label>Phone</label>
 							<input value="(123) 123-456" type="text">
 
 							<label>Email</label>
-							<input value="jennie@example.com" type="text">
-							
-							<label>Payout Email ( paypal )</label>
-							<input value="jennie@example.com" type="text">
+							<input value="jennie@example.com" type="email" disabled>
 
 							<label>About Me</label>
 							<textarea name="about" id="about" cols="30" rows="10">Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper</textarea>
