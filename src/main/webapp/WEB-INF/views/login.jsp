@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
-    <title>Gender Hopes</title>
+    <title>Patiyati: Become Strong</title>
     <!-- Bootstrap Core CSS -->
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">   
 	<link href="plugins/magnific-popup/dist/magnific-popup.css" rel="stylesheet"> 
@@ -169,12 +169,12 @@
 											</p>
 										</div>
 									</div>		
-									<p class="form-row form-row-wide">
+								<!-- 	<p class="form-row form-row-wide">
 										<label for="username2">Username:
 											<i class="ti-user"></i>
 											<input type="text" class="input-text" name="username" id="username2" value="">
 										</label>
-									</p>
+									</p> -->
 										
 									<p class="form-row form-row-wide">
 										<label for="email2">Email Address:

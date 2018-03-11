@@ -37,7 +37,7 @@ public class UserService {
 		String userName = user.getFirstName();
 		String emailId  = user.getEmailId();
 
-		String message = "Hi" + userName + ", \n your Account has been" + flag + "sucessfully.";
+		String message = "Hi " + userName + ", \n your Account has been " + flag + " sucessfully.";
 		emailController.sendEmail(emailId, message);
 
 		user = userRepository.save(user);
@@ -59,5 +59,13 @@ public class UserService {
 
 	public User findById(String id) {
 		return userRepository.findById(id);
+	}
+
+	public void delete(String id) {
+		 userRepository.delete(id);
+	}
+	
+	public void delete() {
+		 userRepository.deleteAll();		
 	}
 }
