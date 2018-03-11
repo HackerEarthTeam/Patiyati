@@ -3003,3 +3003,98 @@ box-sizing: border-box; }
 .card{ 
 	border-radius: 0;
 }
+.checkBoxAlter{
+	margin-bottom: 15px;
+}
+.checkBoxAlter input{
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+	z-index: 9;
+	opacity: 0;
+}
+.checkBoxAlter span{
+	position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #212529;
+    display: inline-block;
+    border-radius: 100%;
+	vertical-align: middle;
+}
+.checkBoxAlter span i{
+	position: absolute;
+    top: 1px;
+    left: 1px;
+	opacity: 0;
+}
+.checkBoxAlter input:checked ~ span i{
+	opacity: 1;
+}
+.my-account.style-1 .checkBoxAlter label{
+	display: inline-block;
+	width: auto;
+	vertical-align: middle;
+	margin: 0;
+}
+.error{
+	border: 1px solid #f00 !important;
+}
+
+.case-border:hover
+{
+	box-shadow: 0px 0px 22px 5px #dcdcdc;
+	background-color:#fff;
+}
+.case-border
+{
+	padding:20px;
+	min-height:188px;
+	transition:0.6s;
+	-webkit-transition:0.6s;
+	-moz-transition:0.6s;
+}
+.case-inn {
+    padding-left: 40px;
+    position: relative;
+}
+.case-inn:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 32px;
+    background-image: url(../images/pdf.png);
+}
+.case-inn h4 {
+	margin-top: 0;
+}
+.case-inn h4 a {
+    margin: 0;
+    font-size: 16px;
+    color: #1a224c;
+    text-align: left; 
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+.case-inn p a {
+    color: #8f8f8f;
+    font-size: 14px;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+.work-places-inn {
+    padding: 15px;
+}.work-places-inn img {
+    padding-bottom: 10px;
+}
+.inner-page h4 {
+    font-size: 18px;
+    font-weight: 300;
+    color: #808080;
+    line-height: 24px;
+}

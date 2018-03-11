@@ -157,7 +157,74 @@
 			</div>
 		</div>
 	</div>
+	<div class="section2">
+		<div class="container">
+			<div class="text-center smallTitle">
+				<h2>How to start new account.</h2>
+				<p>Quisque sem tortor, ultrices vitae libero nec</p>
+				<a href="#" class="btn btn-outline-primary btn-sm">Read Documentation</a>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4">
+					<div class="case-border">
+						<div class="case-inn">
+							<h4><a href="#" target="_blank">Lorem ipsum dolor sit amet, consectetur</a></h4>
+							<p><a href="#" target="_blank">Donec a nibh fermentum, placerat ex at, maximus felis. Fusce id magna nulla. Suspendisse erat orci, aliquam nec aliquet a, lobortis in augue. Morbi non purus consectetur orci feugiat dignissim.</a></p>
+							<a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-4">
+					<div class="case-border">
+						<div class="case-inn">
+							<h4><a href="#" target="_blank">Lorem ipsum dolor sit amet, consectetur</a></h4>
+							<p><a href="#" target="_blank">Donec a nibh fermentum, placerat ex at, maximus felis. Fusce id magna nulla. Suspendisse erat orci, aliquam nec aliquet a, lobortis in augue. Morbi non purus consectetur orci feugiat dignissim.</a></p>
+							<a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+						</div>
+					</div>	
+				</div>
+				<div class="col-md-4">
+					<div class="case-border">
+						<div class="case-inn">
+							<h4><a href="#" target="_blank">Lorem ipsum dolor sit amet, consectetur</a></h4>
+							<p><a href="#" target="_blank">Donec a nibh fermentum, placerat ex at, maximus felis. Fusce id magna nulla. Suspendisse erat orci, aliquam nec aliquet a, lobortis in augue. Morbi non purus consectetur orci feugiat dignissim.</a></p>
+							<a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<hr />
+			<div class="text-center smallTitle mt-5">
+				<h2>Lorem ipsum dolor sit amet.</h2>
+				<p>Quisque sem tortor, ultrices vitae libero nec</p> 
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-4">
+					<div class="work-places-inn text-center">
+						<img src="images/icons/1.png" alt="">
+						<h4>Building a world-class candidate experience</h4>
+					</div>
+				</div>
+				<div class="col-md-4">
+				<div class="work-places-inn text-center">
+					<img src="images/icons/2.png" alt="">
+					<h4>Diversifying online sourcing channels</h4>
+				</div>
+				</div>
+				<div class="col-md-4">
+					<div class="work-places-inn text-center">
+						<img src="images/icons/3.png" alt="">
+						<h4>Utilizing a network of highly qualified candidates</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
 	
+	<!--
 	<div class="section2">
 		<div class="container">
 			<div class="text-center smallTitle">
@@ -210,7 +277,7 @@
 			
 		</div>
 	</div>
-	
+	-->
 	<div class="section3" style="background-image: url(images/section3.png);">
 		<div class="container text-center text-white">
 			<h4 class="text-white RockSalt">Daily News & Tips</h4>
@@ -495,9 +562,7 @@
 						<h3>2. Lorem ipsum dolor sit amet</h3>
 						<p>Quisque sem tortor, ultrices vitae libero nec</p>
 						<h3>3. Lorem ipsum dolor sit amet</h3>
-						<p>Quisque sem tortor, ultrices vitae libero nec</p>
-						<h3>4. Lorem ipsum dolor sit amet</h3>
-						<p>Quisque sem tortor, ultrices vitae libero nec</p>
+						<p>Quisque sem tortor, ultrices vitae libero nec</p> 
 					</div>
 				</div>
 			</div>

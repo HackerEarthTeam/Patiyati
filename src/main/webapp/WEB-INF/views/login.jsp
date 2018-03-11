@@ -117,6 +117,7 @@
 						<ul class="uitabs nav nav-tabs list-inline" role="tablist">
 							<li ><a href="#tab1" data-toggle="tab" role="tab" class="active">Log In</a></li>
 							<li class=""><a href="#tab2" data-toggle="tab" role="tab" >Register</a></li>
+							<li class=""><a href="#tab3" data-toggle="tab" role="tab" >Forget Password</a></li>
 						</ul>
 
 						<div class="tab-content mt-30" style="border: none;" >
@@ -124,7 +125,7 @@
 							<!-- Login -->
 							<div class="tab-pane fade show active" id="tab1" role="tabpanel">
 								<form method="post" class="login" action="login">
-
+									
 									<p class="form-row form-row-wide">
 										<label for="username">Username:
 											<i class="ti-user"></i>
@@ -150,42 +151,82 @@
 							<div class="tab-pane fade" id="tab2" role="tabpanel">
 
 								<form method="post" class="register" action="registration">
-									
-								<p class="form-row form-row-wide">
-									<label for="username2">Username:
-										<i class="ti-user"></i>
-										<input type="text" class="input-text" name="username" id="username2" value="">
-									</label>
-								</p>
-									
-								<p class="form-row form-row-wide">
-									<label for="email2">Email Address:
-										<i class="ti-email"></i>
-										<input type="text" class="input-text" name="email" id="email2" value="">
-									</label>
-								</p>
+									<div class="row">
+										<div class="col-md-6">
+											<p class="form-row form-row-wide">
+												<label for="username">First Name:
+													<i class="ti-user"></i>
+													<input type="text" class="input-text" name="fname" id="fname" value="">
+												</label>
+											</p>
+										</div>
+										<div class="col-md-6">
+											<p class="form-row form-row-wide">
+												<label for="username">Last Name:
+													<i class="ti-user"></i>
+													<input type="text" class="input-text" name="lname" id="lname" value="">
+												</label>
+											</p>
+										</div>
+									</div>		
+									<p class="form-row form-row-wide">
+										<label for="username2">Username:
+											<i class="ti-user"></i>
+											<input type="text" class="input-text" name="username" id="username2" value="">
+										</label>
+									</p>
+										
+									<p class="form-row form-row-wide">
+										<label for="email2">Email Address:
+											<i class="ti-email"></i>
+											<input type="text" class="input-text" name="email" id="email2" value="">
+										</label>
+									</p>
 
-								<p class="form-row form-row-wide">
-									<label for="password1">Password:
-										<i class="ti-lock"></i>
-										<input class="input-text" type="password" name="password1" id="password1">
-									</label>
-								</p>
+									<p class="form-row form-row-wide">
+										<label for="password1">Password:
+											<i class="ti-lock"></i>
+											<input class="input-text" type="password" name="password1" id="password1">
+										</label>
+									</p>
 
-								<p class="form-row form-row-wide">
-									<label for="password2">Repeat Password:
-										<i class="ti-lock"></i>
-										<input class="input-text" type="password" name="password2" id="password2">
-									</label>
-								</p>
+									<p class="form-row form-row-wide">
+										<label for="password2">Repeat Password:
+											<i class="ti-lock"></i>
+											<input class="input-text" type="password" name="password2" id="password2">
+										</label>
+									</p>
 
-								<p class="form-row">
-									<input type="submit" class="btn btn-primary" name="register" value="Register">
-								</p>
+									<p class="form-row">
+										<input type="submit" class="btn btn-primary" name="register" value="Register">
+									</p>
 
 								</form>
 							</div>
 
+							<!-- Forget Password -->
+							<div class="tab-pane fade show " id="tab3" role="tabpanel">
+								<form method="post" class="login" action="#">
+	
+									<p>Enter username & email address to reset password</p>
+									<p class="form-row form-row-wide">
+										<label for="username">Username / Email:
+											<i class="ti-user"></i>
+											<input type="text" class="input-text" name="username" id="username" value="">
+										</label>
+									</p> 
+
+									<p class="form-row">
+										<input type="submit" class="btn btn-primary" name="login" value="Reset Password"> 
+										 
+									</p>
+
+								 
+									
+								</form>
+							</div>
+							
+							
 						</div>
 					</div>
 				</div>
