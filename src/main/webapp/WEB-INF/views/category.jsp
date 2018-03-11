@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="plugins/images/favicon.png">
-    <title>Gender Hopes</title>
+    <title>Patiyati: Become Strong</title>
     <!-- Bootstrap Core CSS -->
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">   
 	<link href="plugins/magnific-popup/dist/magnific-popup.css" rel="stylesheet"> 
