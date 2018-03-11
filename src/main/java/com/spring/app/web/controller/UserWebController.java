@@ -1,6 +1,5 @@
 package com.spring.app.web.controller;
 
-import java.io.IOException;
 import java.util.Date;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
@@ -14,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.spring.app.entity.User;
 import com.spring.app.service.UserService;
-import com.spring.app.utils.EmailController;
+import com.spring.app.utils.Encryptor;
 
 @Controller
 public class UserWebController {
@@ -27,7 +26,6 @@ static Logger LOG = LoggerFactory.getLogger(UserWebController.class.getName());
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login(@RequestParam Map<String,Object> param,Map<String, Object> model,
 						HttpServletRequest req,	HttpServletResponse res) {
-		//LOG.info("login " +param );
 		
 		String page 	= "login";
 		String emailId  = (String)param.get("username");
@@ -35,7 +33,9 @@ static Logger LOG = LoggerFactory.getLogger(UserWebController.class.getName());
 		emailId 		= emailId.toLowerCase().trim();
 		password 		= password.trim();
 		
-		User user = userService.findByEmailIdAndPassword(emailId,password);
+		String decryptedPassword = Encryptor.encrypt(password);
+		
+		User user = userService.findByEmailIdAndPassword(emailId,decryptedPassword);
 		if (user != null) {
 			page = "my-account";
 		}
@@ -55,12 +55,12 @@ static Logger LOG = LoggerFactory.getLogger(UserWebController.class.getName());
 		String password 	= (String)param.get("password1");
 		email 				= email.toLowerCase();
 		password 		    = password.trim();
-
-		//LOG.info("registration  " +param);
+		
 		User user = userService.findByEmailId(email);
 		if (user == null) {
 			user = new User();
-			user.setPassword(password);
+			String encryptedPassword = Encryptor.encrypt(password);
+			user.setPassword(encryptedPassword);
 			user.setState("active");
 			user.setCreatedOn(new Date());
 		}
@@ -72,8 +72,6 @@ static Logger LOG = LoggerFactory.getLogger(UserWebController.class.getName());
 		user.setType(null);
 		user.setModifiedOn(new Date());
 		user = userService.saveUser(user);
-	
-		LOG.info("users " + user);
 		
 		page = "my-account";
 		res.sendRedirect(page);

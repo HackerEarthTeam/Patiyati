@@ -38,5 +38,17 @@ public class UserRestController {
 		return userService.findByEmailId(emailId);
 	}
 	
+	@RequestMapping(value = "/emailIdExisting", method = RequestMethod.GET)
+	public String emailExisting(@RequestParam(value = "emailId", required = true) String emailId) {
+		String result = "new";
 		
+		emailId   = emailId.trim().toLowerCase();
+		User user = userService.findByEmailId(emailId);
+		
+		if (user != null && user.getEmailId().equalsIgnoreCase(emailId)) {
+			result = "duplicate";
+		}
+		
+		return result;
+	}	
 }
