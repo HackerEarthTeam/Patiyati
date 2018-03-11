@@ -47,4 +47,38 @@ jQuery(document).ready(function(){
 			enabled: true
 		}
 	}); 
+	
+	$(document).ready(function () {
+		Dropzone.autoDiscover = false;
+		$("#dZUpload").dropzone({
+			url: "upload",
+			addRemoveLinks: true,
+			success: function (file, response) {
+				var imgName = response;
+				file.previewElement.classList.add("dz-success");
+				console.log("Successfully uploaded :" + imgName);
+			},
+			error: function (file, response) {
+				file.previewElement.classList.add("dz-error");
+			}
+		});
+		
+		Dropzone.autoDiscover = false;
+		$("#dZUpload1").dropzone({
+			url: "upload",
+			addRemoveLinks: true,
+			success: function (file, response) {
+				var imgName = response;
+				file.previewElement.classList.add("dz-success");
+				console.log("Successfully uploaded :" + imgName);
+			},
+			error: function (file, response) {
+				file.previewElement.classList.add("dz-error");
+			}
+		});
+		
+		
+	});
+	
+	
 });

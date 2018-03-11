@@ -118,6 +118,7 @@
 				
 				<h3>Basic Information</h3>
 				 
+				 
 				<div class="submit-section">
 
 					<!-- Title -->
@@ -125,6 +126,12 @@
 						<h5>Property Title <i class="tip" data-tip-content="Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)"><div class="tip-content">Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)</div></i></h5>
 						<input class="search-field" type="text" value="">
 					</div> 
+					<!-- Title -->
+					<div class="form">
+						<h5>Tags <i class="tip" data-tip-content="Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)"><div class="tip-content">Add multiple tags by adding comma(,)</div></i></h5>
+						<input class="search-field" type="text" value="" data-role="tagsinput">
+					</div> 
+					
 					<div class="form">
 						<h5>Category<i class="tip" data-tip-content="Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)"><div class="tip-content">Type title that will also contains an unique feature of your property (e.g. renovated, air contidioned)</div></i></h5>
 						<div class="checkboxes in-row margin-bottom-20">
@@ -157,13 +164,23 @@
 				
 				<h3>Gallery</h3>
 				<div class="submit-section">
-					<form action="/file-upload" class="dropzone dz-clickable"><div class="dz-default dz-message"><span><i class="ti-plus"></i> Click here or drop files to upload</span></div></form>
+					<div id="dZUpload" class="dropzone">
+						<div class="dz-default dz-message"><span><i class="ti-plus"></i> Click here or drop files to upload</span></div>
+					</div> 
+				</div>
+				
+				<h3>Video</h3>
+				<div class="submit-section">
+					<div id="dZUpload1" class="dropzone">
+						<div class="dz-default dz-message"><span><i class="ti-plus"></i> Click here or drop files to upload</span></div>
+					</div> 
 				</div>
 				
 				<h3>Detailed Information</h3>
 				<div class="submit-section"> 
 					 <textarea id="editor-container"></textarea>
 				</div>
+				 
 				
 				<button class="btn btn-outline-primary" type="submit">Submit Article</button> 
 				

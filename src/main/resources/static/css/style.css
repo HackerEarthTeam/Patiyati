@@ -3097,3 +3097,29 @@ box-sizing: border-box; }
     color: #808080;
     line-height: 24px;
 }
+.bootstrap-tagsinput .tag{
+	background-color: #5bc0de;
+	display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.bootstrap-tagsinput input{
+	display: inline-block;
+	width: auto;
+	border: none;
+	margin: 0;
+	box-shadow: none;
+	background: none;
+}
+.bootstrap-tagsinput{
+	border: 1px solid #e0e0e0;
+	padding: 0 20px;
+    width: 100%;
+}
