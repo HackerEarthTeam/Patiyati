@@ -33,15 +33,8 @@
 
 <body>
 
-	<form class="form-inline my-lg-0 search_form">
-		<span class="ti-search"></span> <input class="form-control "
-			type="text" placeholder="What you want to find"
-			aria-label="What you want to find"> <input type="submit"
-			class="btn btn-outline-success my-2 my-sm-0" /> <a
-			href="javascript:void(0);" class="search-close"><span
-			class="ti-close"></span></a>
-	</form>
-	<header class="sticky-top">
+	
+	<header class="">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light ">
 
@@ -77,8 +70,8 @@
 				</div>
 				<div class="collapse navbar-collapse" id="actionicons">
 					<ul class="navbar-nav ml-auto mt-lg-0 first_level">
-						<li class="nav-item"><a class="nav-link toggleSearch"
-							href="javascript:void(0)"><span class="ti-search"></span></a></li>
+						<!-- <li class="nav-item"><a class="nav-link toggleSearch"
+							href="javascript:void(0)"><span class="ti-search"></span></a></li> -->
 						<li class="nav-item"><a class="nav-link" href="#"><span
 								class="ti-help"></span><i>help</i></a></li>
 						<li class="nav-item"><a class="nav-link" href="#"><span
@@ -93,7 +86,15 @@
 			</nav>
 		</div>
 	</header>
-
+	<form class="form-inline my-lg-0 search_form sticky-top">
+		<span class="ti-search"></span> <input class="form-control "
+			type="text" placeholder="What you want to find"
+			aria-label="What you want to find"> <input type="submit"
+			class="btn btn-outline-success my-2 my-sm-0" /> <a
+			href="javascript:void(0);" class="search-close"><span
+			class="ti-close"></span></a>
+	</form>
+	
 	<div class="homeBanner"
 		style="background-image: url(images/banner.jpg);">
 		<div class="container text-center text-white">

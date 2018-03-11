@@ -180,7 +180,7 @@
 							<h4 class="mt-50">Social</h4>
 							<hr />
 							<label><i class="fa fa-twitter"></i> Twitter</label>
-							<input value="https://www.twitter.com/" type="text">
+							<input value="https://www.twitter.com/" type="text"> 
 
 							<label><i class="fa fa-facebook-square"></i> Facebook</label>
 							<input value="https://www.facebook.com/" type="text">
